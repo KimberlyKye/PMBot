@@ -181,6 +181,7 @@ async function showWelcomeMessage(chatId) {
     userSessions.set(chatId, user);
   }
   try {
+    clearUserTimers(user);
     const welcomeMessage =
       `👋 *Привет! Я Нелли - твой персональный менеджер проекта!*\n\n` +
       `Сейчас у нас с тобой такие договоренности:\n` +
